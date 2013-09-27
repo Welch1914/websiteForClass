@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!--
+  	Author    : Sam Welch
+    Document   : index.html
+    Created on : September 16th, 2013
+    Description: This is the home page of the site. User will be direct here by default.
+-->
+<html lang = "en"> 
+
+	
+	
+	<head>
+		<meta charset= "utf-8" />
+		<title>Sam Welch's Personal Site Home</title>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<link href="css/styles.css" type="text/css" rel="stylesheet" />
+		
+	
+	</head>
+	
+	<body id="home">
+		
+			<header>
+				
+				<div id="logo">
+					<img src="images/logo.png">
+				</div><!--end of logo-->
+				
+				
+			</header>
+			<!--Main  has the majority of features in it, save for the header and footer-->
+			<div id="main">
+				<!--Nav and menu control the same feature, the "Navigation Bar", but it is double wrapped to provied better control/ more versitility-->
+				<div id="nav">
+					<nav id="menu">	
+							<ul>
+								<li><a id="home1" href="index.html" title="Home">Home</a></li>
+								<li><a id="about2" href="about.html" title="About Me">About Me</a></li>
+								<li><a id="projects3" href="projects.html" title="Projects">My Projects</a></li>
+								<li><a id="services4" href="services.html" title="Services">Services</a></li>
+								<li><a  id="contact5"href="contact.html" title="Contact">Contact Me</a></li>
+								<li><a href="https://github.com/Welch1914" title="Github">Github</a></li>
+								
+							</ul>		
+					</nav>
+				</div><!--end of nav-->
+				<!--Content holds all of the main features inside of main, that change page to page-->
+				<div id="content">
+					<!------------------------------------------------------------>
+					<div id="welcome"><!--Simple Welcome statement. simple h1 tag-->
+						<h1>Welcome to my humble abode on the internet</h1>
+					</div><!--end of welcome-->
+					<!------------------------------------------------------------>
+					<div id="Tagline"><!--Supposed to be snappy oneliner, that describes what I do. Simple h3 tag -->
+						<h3>Programmers: Building something new from absolutely nothing</h3>	
+					</div><!--end of tagline-->
+					
+					<!------------------------------------------------------------>
+					<div id = "feature"><!--This is the where the slider code is located. Was unable to get it to function in the js file, so moved it here.-->	
+							<h2>Featured Work</h2>
+							
+								<!--This the slider code. This was created  with the use of a tutorial on http://nextopics.com posted
+									by user RayLem. Exact url here: http://nextopics.com/creating-jquery-slider-from-scratch/-->
+							<div class="slider">
+								<ul>
+									<li class='active'><img src="images/website.PNG" class="slider_img" /></li>
+									<li><img src="images/database.PNG" class="slider_img" /></li>
+									<li><img src="images/java.PNG" class="slider_img" /></li>
+								</ul>
+							</div>
+							<div class="toolbars">
+								<button onclick="window.slider.previous()">Previous</button>
+								<button onclick="window.slider.next()">Next</button>
+							</div>
+							<script>
+							
+								$(document).ready( function($){
+								
+									var slider = $('.slider').find('ul');
+									
+									var transition = 2500;
+									
+									$( slider ).find('li.active').show();
+									
+									window.slider = {
+										previous: function(){
+											var current = $( slider ).find( 'li.active' );
+											var prevElement = $( current ).prev('li');
+												
+											if( prevElement.length != 0 ){
+												$( current ).removeClass('active').fadeOut( transition );
+												$( prevElement ).addClass('active').fadeIn( transition );
+											}
+										},
+										next: function(){
+											var current = $( slider ).find( 'li.active' );
+											var nextElement = $( current ).next('li');
+												
+											if( nextElement.length != 0 ){
+												$( current ).removeClass('active').fadeOut( transition );
+												$( nextElement ).addClass('active').fadeIn( transition );
+											}
+										}
+									};
+								});
+							</script>
+					</div><!--end of feature-->
+					
+					<!------------------------------------------------------------>
+					<!--A statement of goals. Simple text for h2, unordered list, and p tags-->
+					<div id="Statement">
+						<h2>Mission</h2>
+						<ul>
+							<li><p>To develop programs and websites that will be respected by industry proffesionals.</p></li>
+							<li><p>To continually build better and more innovative programs. </p></li>
+							<li><p>To help those who are starting of in industry find their feet and gain confidence. </p></li>
+						</ul>
+					</div><!--end of mission statement-->
+					<!------------------------------------------------------------>
+					<!--This is a button that is linked to the project tab-->
+					<div id="Action">
+						 <p><a href="projects.html" class="button">View More Work</a></p>
+					</div><!--end of action-->
+					<!------------------------------------------------------------>
+					<!--This is the link to facebook and twitter. I am not actively using any other social sites as of Sept 26th, 2013-->
+					<div id="socialLink">
+						<h2>Keep Connected</h2>
+						<p>Join me on Facebook and twitter!</p>
+							<a href="https://www.facebook.com/welch1914" ><img src="http://www.niftybuttons.com/webicons2/facebook.png"></a>
+							<a href="https://twitter.com/Welch1914" ><img src="http://www.niftybuttons.com/webicons2/twitter.png"></a>
+					</div><!--end of socialLink-->
+					
+				</div><!--end of Content-->
+			
+			</div><!--end of main-->
+			
+		<footer>
+			<!--Copy Right statment. small text, uses the &copy; to make the copyright symbol-->
+			<div id="copyright">
+				<small>&copy; 2013 Sam Welch</small>
+			</div><!--end of copyright-->
+				
+		</footer>	
+		
+	</body>
+	
+</html>

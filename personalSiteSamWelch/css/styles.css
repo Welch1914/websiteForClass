@@ -1,0 +1,236 @@
+/* 
+ * 	 Author     : Sam Welch
+ *   Document   : styles
+ *   Created on : September 16th, 2013
+ *   Description: Uses css to formate the html pages, make them more functional, and look more professional .
+*/
+
+#logo{
+	top: auto;
+	position: fixed;
+	margin: 0;
+}
+ 
+
+ h1{
+	position: relative;
+	text-align: center;
+}
+
+
+body{
+	background-color:#005EB2;
+	
+}
+#main{
+	background-color:#FFFFFF;
+	min-height: 768px;
+	max-width:900px;
+	margin: auto;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+}
+#Tagline{
+	text-align: center;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 0.5em;
+}
+#Action a:visited, a:link{
+	background-color: white;
+}
+#menu{
+	position: relative;
+	text-align:center;
+	background-color: #FFC77C;
+	width: 700px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-border-radius: 200px;
+	border-radius: 200px;
+	
+}
+#menu ul{
+	list-style-type:none;
+ 	padding: 1em; 
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+	
+	
+}
+#menu li{
+	display: inline-block;
+	height: 50px;
+	padding: 0;
+	margin: 0 5px 0 0;
+	
+}
+#menu li a{
+	height: 20px;
+	display: inline-block;
+	padding: 10px 15px 20px 15px;
+	text-decoration: none;
+	background-color: #CCC;
+	-webkit-border-radius: 200px;
+	border-radius: 200px;
+}
+
+
+#nav li a:visited, a:link{
+	color: black;
+	background-color:#FFAC27;
+}
+#nav li:a:hover, #navli: a:active{
+	background-color: #0D8CFF;
+	
+}
+body#home     a#home1,
+body#about    a#about2,
+body#projects a#projects3,
+body#services a#services4,
+body#contact  a#contact5{
+	
+	background-color: #FFC77C;
+}
+
+img.slider_img {
+	width: 600px;
+	height: 400px;
+}
+.slider ul {
+	margin: 0;
+	padding: 0;
+	width: 600px;
+	white-space: nowrap;
+	position: relative;
+}
+.slider li {
+	position: absolute;
+	margin: 0;
+	padding: 0;	
+	left: 0;
+	display: none;
+}
+.slider {
+	width: 600px;
+	height: 400px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #DDD;
+}
+.toolbars {
+	width: 600px;
+	margin: 0 auto;
+}
+button {
+	border: 1px solid #222;
+	padding: 2px 5px;
+	background: #3e3e3e;
+	cursor: pointer;
+	border-radius: 5px;
+	color: #FFF;
+}
+button:hover {
+	background: #FFA20D;
+}
+
+#copyright {
+	text-align:left;
+	position: fixed;
+	bottom: 0;
+}
+
+#content{
+	text-align: center;
+	position: relative;
+	bottom: 5px;
+}
+
+#Statement{
+	text-align: left;
+	max-width: 200px;
+	border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    margin: 5px;
+}
+#Action{
+	text-align: left;
+	max-width: 200px;
+	border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    margin: 5px;
+}
+
+#socialLink{
+	position: relative;
+	float: right;
+	margin: -350px 30px 0px 0px;
+	width: 500px;
+	border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    padding-top:5em;
+    padding-bottom:5em;
+    background-color: #FFFFFF;;
+    
+	
+}
+#socialLink li a:visited, a:link{
+
+	background-color: #FFFFFF;;
+}
+#myPic img {
+	width: 400px;
+	height: 275px;
+}
+
+#aboutContent{
+	text-align: center;
+}
+#bio{
+	
+	max-width: 700px;
+	margin: 0px auto;
+}
+
+body#projects #content img{
+	width: 600px;
+	height: 400px;
+}
+
+#serve{
+	text-align: center;
+}
+#mess h2{
+	margin: 0 auto;
+	max-width: 650px;
+	
+}
+
+#contactInfo{
+	float: left;
+	width: 300px;
+	margin: 100px 0px 0px 50px  ;
+}
+#contactInfo p{
+	text-align: left
+	
+}
+#socialContact{
+	float: right;
+	margin: 75px 80px 0px 0px;
+	background-color: #FFFFFF;
+}
+#border{
+	margin: 100px 0px 0px 0px;
+	border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
